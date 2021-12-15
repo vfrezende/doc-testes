@@ -53,4 +53,4 @@ Nesse Teste de Unidade temos a verificação da geração de nome do arquivo de 
         self.assertRaises(SystemExit, legofy.main, fake_path)
 
 ```
-O Teste 3 é bastante simples, ele apenas realiza a verificação de quem se uma imagem inválida for passada, a ferramenta não da sequência no procedimento de Legofy.
+O Teste 3 é bastante simples, ele apenas realiza a verificação de que, se uma imagem for passada em um diretório invalido, a ferramenta não da sequência no procedimento de Legofy. Dessa forma ele primeiro cria uma imagem em um diretório fake e verifica se o diretório é válido, caso não seja, da exit no procedimento.
